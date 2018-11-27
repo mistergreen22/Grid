@@ -1,0 +1,76 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite1" verbose="1">
+    <test name="Test on [Chrome]">
+        <parameter name="selenium.browser" value="chrome"/>
+            <classes>
+                <class name="Script2"/>
+            </classes>
+    </test>
+    <test name="Test on [Firefox]">
+        <parameter name="selenium.browser" value="firefox"/>
+        <classes>
+            <class name="Script2"/>
+        </classes>
+    </test>
+    
+    <test name="Test on [Edge]">
+        <parameter name="selenium.browser" value="edge"/>
+        <classes>
+            <class name="Script2"/>
+        </classes>
+    </test>
+    
+    <test name="Test on headless chrome">
+        <parameter name="selenium.browser" value="headless chrome"/>
+        <classes>
+            <class name="Script2"/>
+        </classes>
+    </test>
+    
+    <test name="Test on mobile browser">
+        <parameter name="selenium.browser" value="mobile"/>
+        <classes>
+            <class name="Script2"/>
+        </classes>
+    </test>
+
+
+
+    <test name="Test on [Chrome]">
+        <parameter name="selenium.browser" value="chrome"/>
+        <classes>
+            <class name="Script1"/>
+        </classes>
+    </test>
+
+    <test name="Test on [Firefox]">
+        <parameter name="selenium.browser" value="firefox"/>
+        <classes>
+            <class name="Script1"/>
+        </classes>
+    </test>
+
+    <test name="Test on [Edge]">
+        <parameter name="selenium.browser" value="edge"/>
+        <classes>
+            <class name="Script1"/>
+        </classes>
+    </test>
+
+    <test name="Test on headless chrome">
+        <parameter name="selenium.browser" value="headless chrome"/>
+        <classes>
+            <class name="Script1"/>
+        </classes>
+    </test>
+
+    <test name="Test on mobile browser">
+        <parameter name="selenium.browser" value="mobile"/>
+        <classes>
+            <class name="Script1"/>
+        </classes>
+    </test>
+
+</suite>
+
